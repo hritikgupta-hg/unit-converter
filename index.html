@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="unit-converter">
+        <div class="title">Unit Converter</div>
+        <select name="entity" class="main-options">
+            <option class="main-option" value="area">Area</option>
+            <option class="main-option" value="length" selected="selected">Length</option>
+            <option class="main-option" value="mass">Mass</option>
+            <option class="main-option" value="time">Time</option>
+            <option class="main-option" value="volume">Volume</option>
+        </select>
+        <div class="equate">
+            <div class="LHS">
+                <input class="value value-LHS" type="number" data-index="0">
+                <select name="sub-options-LHS" class="sub-options sub-options-LHS" data-index="0">
+                </select>
+            </div>
+
+            <span class="equal">=</span>
+
+            <div class="RHS">
+                <input class="value value-RHS" type="number" data-index="1">
+                <select name="sub-options sub-options-RHS" class="sub-options sub-options-RHS" data-index="1">
+                </select>
+            </div>
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
